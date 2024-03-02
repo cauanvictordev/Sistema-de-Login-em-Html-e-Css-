@@ -1,0 +1,130 @@
+/* Importação da fonte Poppins do Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Estilo global para redefinir margens, paddings e utilizar a fonte Poppins */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
+    box-sizing: border-box; /* Garante que o modelo de caixa seja border-box */
+    font-family: "Poppins", sans-serif; /* Aplica a fonte Poppins globalmente */
+}
+
+/* Estilo do corpo da página */
+body {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh; /* Garante altura mínima de 100% da altura da tela */
+    background: url(login.jpg); /* Define a imagem de fundo */
+    background-size: cover; /* Cobrir toda a tela */
+    background-position: center; /* Centralizar a imagem */
+}
+
+/* Estilo do contêiner principal */
+.wrapper {
+    width: 420px; /* Largura fixa do contêiner principal */
+    background: transparent; /* Fundo transparente */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda com transparência */
+    backdrop-filter: blur(20px); /* Efeito de desfoque no fundo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra para destacar o contêiner */
+    color: #fff; /* Cor do texto */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 30px 40px; /* Espaçamento interno */
+}
+
+/* Estilo do título dentro do contêiner */
+.wrapper h1 {
+    font-size: 36px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do contêiner de entrada de dados */
+.wrapper .input-box {
+    width: 100%; /* Largura total */
+    height: 50px; /* Altura fixa */
+    margin: 30px 0; /* Margem superior e inferior de 30px */
+}
+
+/* Estilo do campo de entrada de dados */
+.input-box input {
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    outline: none; /* Sem contorno ao focar */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda com transparência */
+    border-radius: 40px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    padding: 20px 45px 20px 20px; /* Espaçamento interno */
+}
+
+/* Estilo do texto de espaço reservado no campo de entrada de dados */
+.input-box input::placeholder {
+    color: #fff; /* Cor do texto de espaço reservado */
+}
+
+/* Estilo do ícone dentro do campo de entrada de dados */
+.input-box i {
+    position: absolute; /* Posicionamento absoluto */
+    right: 20px; /* Distância de 20px da borda direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    font-size: 20px; /* Tamanho da fonte do ícone */
+}
+
+/* Estilo do contêiner para lembrar e esquecer informações */
+.wrapper .remember-forgot {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: space-between; /* Espaçamento uniforme entre os itens */
+    font-size: 14.5px; /* Tamanho da fonte */
+    margin: -15px 0 15px; /* Margens superior, inferior e direita */
+}
+
+/* Estilo do input dentro do contêiner de lembrar/esquecer */
+.remember-forgot label input {
+    color: #fff; /* Cor da caixa de seleção */
+    margin-right: 3px; /* Margem à direita */
+}
+
+/* Estilo do link dentro do contêiner de lembrar/esquecer */
+.remember-forgot a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Sem decoração de texto */
+}
+
+/* Efeito de sublinhado no link ao passar o mouse */
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do botão dentro do contêiner principal */
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Estilo do link de redirecionamento dentro do contêiner principal */
+.wrapper .wrapper-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+/* Estilo do link de registro */
+.register-link p a {
+    color: #fff; /* Cor do link de registro */
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Efeito de sublinhado no link de registro ao passar o mouse */
+.register-link p a:hover {
+    text-decoration: underline;
+}
